@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.7.0">
+<eagle version="9.0.1">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
+<setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -621,131 +622,149 @@ DIN A4, landscape with location and doc. field</description>
 <busses>
 </busses>
 <nets>
-<net name="N$1" class="0">
+<net name="RST" class="0">
 <segment>
 <pinref part="__" gate="G$1" pin="9"/>
 <pinref part="ESP-01M" gate="G$1" pin="RST"/>
 <wire x1="109.22" y1="106.68" x2="116.84" y2="106.68" width="0.1524" layer="91"/>
+<label x="111.76" y="106.68" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$2" class="0">
+<net name="IO16" class="0">
 <segment>
 <pinref part="__" gate="G$1" pin="8"/>
 <pinref part="ESP-01M" gate="G$1" pin="IO16"/>
 <wire x1="109.22" y1="104.14" x2="116.84" y2="104.14" width="0.1524" layer="91"/>
+<label x="111.76" y="104.14" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$3" class="0">
+<net name="ADC" class="0">
 <segment>
 <pinref part="__" gate="G$1" pin="7"/>
 <pinref part="ESP-01M" gate="G$1" pin="ADC"/>
 <wire x1="109.22" y1="101.6" x2="116.84" y2="101.6" width="0.1524" layer="91"/>
+<label x="111.76" y="101.6" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$4" class="0">
+<net name="IO14" class="0">
 <segment>
 <pinref part="__" gate="G$1" pin="6"/>
 <pinref part="ESP-01M" gate="G$1" pin="IO14"/>
 <wire x1="109.22" y1="99.06" x2="116.84" y2="99.06" width="0.1524" layer="91"/>
+<label x="111.76" y="99.06" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$5" class="0">
+<net name="IO12" class="0">
 <segment>
 <pinref part="__" gate="G$1" pin="5"/>
 <pinref part="ESP-01M" gate="G$1" pin="IO12"/>
 <wire x1="109.22" y1="96.52" x2="116.84" y2="96.52" width="0.1524" layer="91"/>
+<label x="111.76" y="96.52" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$6" class="0">
+<net name="IO5" class="0">
 <segment>
 <pinref part="__" gate="G$1" pin="4"/>
 <pinref part="ESP-01M" gate="G$1" pin="IO5"/>
 <wire x1="109.22" y1="93.98" x2="116.84" y2="93.98" width="0.1524" layer="91"/>
+<label x="111.76" y="93.98" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$7" class="0">
+<net name="IO10" class="0">
 <segment>
 <pinref part="__" gate="G$1" pin="3"/>
 <pinref part="ESP-01M" gate="G$1" pin="IO10"/>
 <wire x1="109.22" y1="91.44" x2="116.84" y2="91.44" width="0.1524" layer="91"/>
+<label x="111.76" y="91.44" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$8" class="0">
+<net name="IO9" class="0">
 <segment>
 <pinref part="__" gate="G$1" pin="2"/>
 <pinref part="ESP-01M" gate="G$1" pin="IO9"/>
 <wire x1="109.22" y1="88.9" x2="116.84" y2="88.9" width="0.1524" layer="91"/>
+<label x="111.76" y="88.9" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$9" class="0">
+<net name="IO4" class="0">
 <segment>
 <pinref part="__" gate="G$1" pin="1"/>
 <pinref part="ESP-01M" gate="G$1" pin="IO4"/>
 <wire x1="109.22" y1="86.36" x2="116.84" y2="86.36" width="0.1524" layer="91"/>
+<label x="111.76" y="86.36" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$10" class="0">
+<net name="GND" class="0">
 <segment>
 <pinref part="ESP-01M" gate="G$1" pin="GND"/>
 <pinref part="_" gate="G$1" pin="1"/>
 <wire x1="149.86" y1="106.68" x2="157.48" y2="106.68" width="0.1524" layer="91"/>
+<label x="152.4" y="106.68" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$11" class="0">
+<net name="VDD" class="0">
 <segment>
 <pinref part="ESP-01M" gate="G$1" pin="VDD"/>
 <pinref part="_" gate="G$1" pin="2"/>
 <wire x1="149.86" y1="104.14" x2="157.48" y2="104.14" width="0.1524" layer="91"/>
+<label x="152.4" y="104.14" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$12" class="0">
+<net name="TXD" class="0">
 <segment>
 <pinref part="ESP-01M" gate="G$1" pin="TXD"/>
 <pinref part="_" gate="G$1" pin="3"/>
 <wire x1="149.86" y1="101.6" x2="157.48" y2="101.6" width="0.1524" layer="91"/>
+<label x="152.4" y="101.6" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$13" class="0">
+<net name="RXD" class="0">
 <segment>
 <pinref part="ESP-01M" gate="G$1" pin="RXD"/>
 <pinref part="_" gate="G$1" pin="4"/>
 <wire x1="149.86" y1="99.06" x2="157.48" y2="99.06" width="0.1524" layer="91"/>
+<label x="152.4" y="99.06" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$14" class="0">
+<net name="IO13" class="0">
 <segment>
 <pinref part="ESP-01M" gate="G$1" pin="IO13"/>
 <pinref part="_" gate="G$1" pin="5"/>
 <wire x1="149.86" y1="96.52" x2="157.48" y2="96.52" width="0.1524" layer="91"/>
+<label x="152.4" y="96.52" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$15" class="0">
+<net name="IO15" class="0">
 <segment>
 <pinref part="ESP-01M" gate="G$1" pin="IO15"/>
 <pinref part="_" gate="G$1" pin="6"/>
 <wire x1="149.86" y1="93.98" x2="157.48" y2="93.98" width="0.1524" layer="91"/>
+<label x="152.4" y="93.98" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$16" class="0">
+<net name="IO2" class="0">
 <segment>
 <pinref part="ESP-01M" gate="G$1" pin="IO2"/>
 <pinref part="_" gate="G$1" pin="7"/>
 <wire x1="149.86" y1="91.44" x2="157.48" y2="91.44" width="0.1524" layer="91"/>
+<label x="152.4" y="91.44" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$17" class="0">
+<net name="IO0" class="0">
 <segment>
 <pinref part="ESP-01M" gate="G$1" pin="IO0"/>
 <pinref part="_" gate="G$1" pin="8"/>
 <wire x1="149.86" y1="88.9" x2="157.48" y2="88.9" width="0.1524" layer="91"/>
+<label x="152.4" y="88.9" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$18" class="0">
+<net name="EN" class="0">
 <segment>
 <pinref part="ESP-01M" gate="G$1" pin="EN"/>
 <wire x1="149.86" y1="86.36" x2="154.94" y2="86.36" width="0.1524" layer="91"/>
 <pinref part="_" gate="G$1" pin="9"/>
 <wire x1="154.94" y1="86.36" x2="157.48" y2="86.36" width="0.1524" layer="91"/>
+<label x="152.4" y="86.36" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
